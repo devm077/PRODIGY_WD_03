@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+.h1{
+    font-size:4em;
+    margin:0.3em;
+    padding:0.05em;
+    color:whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-color: rgb(2, 45, 52);
+}
+
+.box{
+    text-align:center;
+}
+
+.board{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.cell{
+    display:flex;
+    width:3em;
+    height:3em;
+    background-color: rgb(2, 45, 52);
+    font-size:3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkorange;
+    justify-content: center;
+    border:0.03em solid yellow;
+    align-items: center;
+    cursor:pointer;
+    
+}
+.cellTop{
+    border-top:none;
+}
+
+.cellLeft{
+    border-left:none;
+}
+
+.cellRight{
+    border-right:none;
+}
+
+.cellBottom{
+    border-bottom:none;
+}
+
+.cell:hover{
+    background-color:rgb(35, 66, 71) ;
+}
+#reset{
+    background-color:rgb(52, 133, 19);
+    padding:0.5em;
+    text-align:center;
+    border:none;
+    border-radius: 0.8em;
+    margin:0.3em;
+    font-size: 1.15em;
+    cursor:pointer;
+    color:whitesmoke;
+}
+#reset:hover{
+    opacity:0.7;
+}
+#result{
+    font-size:2.2em;
+    color:lightsalmon;
+    margin-bottom:0.05em;
+    margin-top:0.15em;
+    font-family:Helvetica, sans-serif;
+}
